@@ -1,0 +1,92 @@
+#python programm to find positive and negative number#
+
+num=int(input("Enter number: "))
+if num>0:
+    print("number is positive")
+elif num==0:
+    print("number is zero")
+else:
+    print("Number is negative")
+    
+    
+    
+    #python program to print square pattern#
+    
+n=int(input("enter sides:"))
+print("square star pattern")
+for i in range(n):
+    for j in range(n):
+        if(i==0 or i==n-1 or j==0 or j==n-1):
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print() 
+    
+    
+    
+   #python programm to print sum of fiboonaci series#
+   
+   def fibsum(n):
+    if(n<=0):
+        return 0
+    fib=[0]*(n+1)
+    fib[1]=1
+    sum=fib[0]+fib[1]
+    for i in range(2,n+1):
+        fib[i]=fib[i-1]+fib[i-2]
+        sum=sum+fib[i]
+    return sum
+n=6
+print("sum of fibooonaci number:",fibsum(n))
+
+
+
+#python programm to reverse the string#
+
+n=input("enter a string") 
+a=n[::-1]
+print("the reverse string is",a)
+
+
+
+
+#python programm to sort the string#
+
+list=[]
+a=int(input("enter how many strings to be their ")) 
+for i in range(a) :
+  b=input(" Enter a string one by one")
+  list.append(b) 
+print("the list is", list) 
+for j in range(a) :
+ small=min(list[j:]) 
+ index=list.index(small) 
+ list[j],list[index]=list[index], list[j]
+print("the sorted list of strings =", list)
+
+
+
+#python programm to fin the pair of an element#
+
+arr=[]
+n=int(input("enter how many number to be their ")) 
+for i in range(n) :
+  a=int(input (" Enter a number one by one")) 
+  arr.append(a) 
+print("the array is", arr)
+num=int(input ("enter a number")) 
+for i in range(0 ,n):
+ for j in range(i+1, n):
+   if((arr[i]+arr[j])==num):
+     print(arr[i], "+", arr[j], "=", num)
+
+
+
+
+
+    
+    
+    
+    
+    
+    
